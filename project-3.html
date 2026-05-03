@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desain Perkuatan Struktur Baja | Portofolio Shofi</title>
+    <link rel="icon" type="image/png" href="public/img/favicon.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .project-detail-hero { padding-top: 120px; padding-bottom: 4rem; text-align: center; }
+        .project-detail-hero h1 { font-family: var(--font-heading); font-size: 3rem; margin-bottom: 1rem; color: var(--text-primary); }
+        .project-meta { display: flex; justify-content: center; gap: 2rem; color: var(--text-secondary); margin-bottom: 2rem; }
+        .project-content { background-color: var(--card-bg); border-radius: 20px; padding: 3rem; margin-bottom: 4rem; border: 1px solid var(--border-color); }
+        .project-main-img { width: 100%; height: auto; max-height: 500px; object-fit: cover; border-radius: 15px; margin-bottom: 3rem; }
+        .project-text h2 { font-family: var(--font-heading); margin-bottom: 1rem; margin-top: 2rem; color: var(--text-primary); }
+        .project-text p { margin-bottom: 1.5rem; color: var(--text-secondary); font-size: 1.1rem; }
+        .back-btn { display: inline-flex; align-items: center; gap: 0.5rem; margin-bottom: 2rem; color: var(--text-secondary); transition: var(--transition); }
+        .back-btn:hover { color: var(--primary-color); transform: translateX(-5px); }
+
+        @media (max-width: 768px) {
+            .project-content { padding: 1.5rem; }
+            .project-detail-hero h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="index.html" class="logo">Shofi Naila Azzahra</a>
+            <ul class="nav-links" style="display:flex;">
+                <li><a href="index.html#beranda">Beranda</a></li>
+                <li><a href="index.html#proyek" class="active">Proyek</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="project-detail-hero">
+            <a href="index.html#proyek" class="back-btn"><i class="fas fa-arrow-left"></i> Kembali ke Portofolio</a>
+            <h1>Desain Perkuatan Struktur Baja</h1>
+            <div class="project-meta">
+                <span><i class="fas fa-tag"></i> Perancangan</span>
+            </div>
+        </section>
+
+        <section class="project-content">
+            <img src="public/img/project-3.png" alt="Desain Perkuatan Struktur Baja" class="project-main-img">
+            <div class="project-text">
+                <h2>Latar Belakang Proyek</h2>
+                <p>Proyek ini berkaitan dengan pemodelan ulang dan perancangan detail sambungan baja pada struktur gudang yang mengalami penurunan kapasitas beban. Kondisi ini terjadi akibat perubahan fungsi ruang dan penambahan beban operasional yang melebihi kapasitas desain awal, sehingga diperlukan solusi perkuatan struktural yang tepat dan aman.</p>
+
+                <h2>Peran & Kontribusi</h2>
+                <p>Keterlibatan saya dalam proyek ini mencakup tahap analisis teknis hingga penyusunan gambar detail:</p>
+                <ul style="color: var(--text-secondary); margin-left: 2rem; margin-bottom: 1.5rem; line-height: 1.6;">
+                    <li>Melakukan pemodelan ulang struktur baja eksisting menggunakan perangkat lunak analisis struktur untuk mengevaluasi kapasitas beban aktual.</li>
+                    <li>Merancang detail sambungan baja tambahan (cover plate dan bracket) yang dapat meningkatkan kapasitas beban tanpa mengganggu elemen struktural yang masih berfungsi baik.</li>
+                    <li>Membuat gambar kerja detail (shop drawing) sambungan baja menggunakan AutoCAD sebagai acuan pelaksanaan di lapangan.</li>
+                    <li>Menyusun spesifikasi teknis material baja yang dibutuhkan sesuai standar SNI.</li>
+                </ul>
+
+                <h2>Hasil & Kesimpulan</h2>
+                <p>Desain perkuatan yang dihasilkan terbukti mampu meningkatkan kapasitas beban struktur gudang secara signifikan. Solusi yang dipilih berupa penambahan <strong>cover plate</strong> pada elemen balok utama dan penguatan sambungan dengan <strong>baut mutu tinggi (High Strength Bolt)</strong>, yang merupakan pendekatan paling efisien dari sisi biaya dan waktu pelaksanaan tanpa harus membongkar struktur yang sudah ada.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2026 Shofi Naila Azzahra. Hak Cipta Dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Init theme from localStorage
+        if (localStorage.getItem('theme') === 'light') {
+            document.documentElement.setAttribute('data-theme', 'light');
+        }
+    </script>
+</body>
+</html>

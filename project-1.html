@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analisis Kerusakan Struktur Beton | Portofolio Shofi</title>
+    <link rel="icon" type="image/png" href="public/img/favicon.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .project-detail-hero { padding-top: 120px; padding-bottom: 4rem; text-align: center; }
+        .project-detail-hero h1 { font-family: var(--font-heading); font-size: 3rem; margin-bottom: 1rem; color: var(--text-primary); }
+        .project-meta { display: flex; justify-content: center; gap: 2rem; color: var(--text-secondary); margin-bottom: 2rem; }
+        .project-content { background-color: var(--card-bg); border-radius: 20px; padding: 3rem; margin-bottom: 4rem; border: 1px solid var(--border-color); }
+        .project-main-img { width: 100%; height: auto; max-height: 500px; object-fit: cover; border-radius: 15px; margin-bottom: 3rem; }
+        .project-text h2 { font-family: var(--font-heading); margin-bottom: 1rem; margin-top: 2rem; color: var(--text-primary); }
+        .project-text p { margin-bottom: 1.5rem; color: var(--text-secondary); font-size: 1.1rem; }
+        .back-btn { display: inline-flex; align-items: center; gap: 0.5rem; margin-bottom: 2rem; color: var(--text-secondary); transition: var(--transition); }
+        .back-btn:hover { color: var(--primary-color); transform: translateX(-5px); }
+        
+        @media (max-width: 768px) {
+            .project-content { padding: 1.5rem; }
+            .project-detail-hero h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="index.html" class="logo">Shofi Naila Azzahra</a>
+            <ul class="nav-links" style="display:flex;">
+                <li><a href="index.html#beranda">Beranda</a></li>
+                <li><a href="index.html#proyek" class="active">Proyek</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="project-detail-hero">
+            <a href="index.html#proyek" class="back-btn"><i class="fas fa-arrow-left"></i> Kembali ke Portofolio</a>
+            <h1>Analisis Kerusakan Struktur Beton</h1>
+            <div class="project-meta">
+                <span><i class="fas fa-tag"></i> Inspeksi</span>
+            </div>
+        </section>
+
+        <section class="project-content">
+            <img src="public/img/project-1.png" alt="Analisis Kerusakan Struktur Beton" class="project-main-img">
+            <div class="project-text">
+                <h2>Latar Belakang Proyek</h2>
+                <p>Proyek ini melibatkan identifikasi dan analisis keretakan pada kolom utama sebuah gedung perkantoran. Kerusakan struktural ini berpotensi membahayakan keseluruhan kestabilan gedung jika tidak segera ditangani secara komprehensif.</p>
+                
+                <h2>Peran & Kontribusi</h2>
+                <p>Dalam proyek ini, saya berperan dalam tahapan inspeksi awal dan analisis data, dengan tugas utama meliputi:</p>
+                <ul style="color: var(--text-secondary); margin-left: 2rem; margin-bottom: 1.5rem; line-height: 1.6;">
+                    <li>Melakukan survei visual dan pemetaan lokasi keretakan pada seluruh struktur lantai dasar.</li>
+                    <li>Mendokumentasikan dimensi (lebar dan kedalaman) serta pola retak untuk analisis lebih lanjut.</li>
+                    <li>Membantu merumuskan usulan metode perbaikan (retrofitting) struktural.</li>
+                </ul>
+
+                <h2>Hasil & Kesimpulan</h2>
+                <p>Berdasarkan data inspeksi, disimpulkan bahwa metode retrofitting dengan material <strong>FRP (Fiber Reinforced Polymer)</strong> merupakan solusi yang paling efisien dan efektif. Metode ini dapat mengembalikan kapasitas beban kolom utama tanpa harus menghentikan operasional gedung secara total, memberikan solusi yang aman dan ekonomis.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2026 Shofi Naila Azzahra. Hak Cipta Dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // Init theme from localStorage
+        if (localStorage.getItem('theme') === 'light') {
+            document.documentElement.setAttribute('data-theme', 'light');
+        }
+    </script>
+</body>
+</html>

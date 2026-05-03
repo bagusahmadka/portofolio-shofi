@@ -25,14 +25,22 @@
         <nav class="navbar">
             <a href="#" class="logo">Shofi Naila Azzahra</a>
             <ul class="nav-links">
-                <li><a href="#beranda">Beranda</a></li>
-                <li><a href="#tentang">Tentang Saya</a></li>
-                <li><a href="#keahlian">Keahlian</a></li>
-                <li><a href="#proyek">Proyek</a></li>
-                <li><a href="#kontak">Kontak</a></li>
+                <li><a href="#beranda" data-translate="nav-beranda">Beranda</a></li>
+                <li><a href="#tentang" data-translate="nav-tentang">Tentang Saya</a></li>
+                <li><a href="#keahlian" data-translate="nav-keahlian">Keahlian</a></li>
+                <li><a href="#proyek" data-translate="nav-proyek">Proyek</a></li>
+                <li><a href="#kontak" data-translate="nav-kontak">Kontak</a></li>
             </ul>
-            <div class="menu-toggle">
-                <i class="fas fa-bars"></i>
+            <div class="header-actions" style="display: flex; align-items: center; gap: 1.5rem;">
+                <button class="lang-toggle" aria-label="Toggle Language" style="background: none; border: none; color: var(--text-primary); font-size: 1rem; cursor: pointer; font-weight: 600; transition: var(--transition);">
+                    <span id="lang-text">ID</span>
+                </button>
+                <button class="theme-toggle" aria-label="Toggle Light/Dark Mode" style="background: none; border: none; color: var(--text-primary); font-size: 1.2rem; cursor: pointer; transition: var(--transition);">
+                    <i class="fas fa-sun" id="theme-icon"></i>
+                </button>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
             </div>
         </nav>
     </header>
@@ -41,15 +49,15 @@
         <!-- Hero Section -->
         <section id="beranda" class="hero">
             <div class="hero-content">
-                <p class="greeting">Halo, perkenalkan saya</p>
+                <p class="greeting" data-translate="hero-greeting">Halo, perkenalkan saya</p>
                 <h1 class="name">Shofi Naila Azzahra</h1>
                 <h2 class="title"><span id="typing-text"></span><span class="cursor">|</span></h2>
-                <p class="summary">Mahasiswa D4 Teknik Perawatan dan Perbaikan Gedung di Politeknik Negeri Semarang.
+                <p class="summary" data-translate="hero-summary">Mahasiswa D4 Teknik Perawatan dan Perbaikan Gedung di Politeknik Negeri Semarang.
                     Memiliki minat pada bidang konstruksi, Quantity Surveyor, Quality Control, K3/HSE, serta Maintenance
                     Gedung.</p>
                 <div class="cta-buttons">
-                    <a href="#proyek" class="btn btn-primary">Lihat Proyek</a>
-                    <a href="#kontak" class="btn btn-secondary">Hubungi Saya</a>
+                    <a href="#proyek" class="btn btn-primary" data-translate="btn-proyek">Lihat Proyek</a>
+                    <a href="#kontak" class="btn btn-secondary" data-translate="btn-kontak">Hubungi Saya</a>
                 </div>
             </div>
             <div class="hero-graphics">
@@ -65,26 +73,26 @@
         <section id="tentang" class="about section-padding reveal">
             <div class="container">
                 <div class="section-title">
-                    <h2>Tentang Saya</h2>
+                    <h2 data-translate="title-tentang">Tentang Saya</h2>
                     <div class="underline"></div>
                 </div>
                 <div class="about-content">
                     <div class="about-text">
-                        <p>Saya merupakan mahasiswa <strong>D4 Teknik Perawatan dan Perbaikan Gedung</strong> di
+                        <p data-translate="about-p1">Saya merupakan mahasiswa <strong>D4 Teknik Perawatan dan Perbaikan Gedung</strong> di
                             <strong>Politeknik Negeri Semarang</strong> yang memiliki minat pada bidang konstruksi,
                             <strong>Quantity Surveyor</strong>, <strong>Quality Control</strong>, keselamatan dan
                             kesehatan kerja (<strong>K3/HSE</strong>), serta <strong>Maintenance Gedung</strong>.</p>
-                        <p>Memiliki pengalaman dalam membantu inspeksi pekerjaan lapangan, dokumentasi teknis, pengisian
+                        <p data-translate="about-p2">Memiliki pengalaman dalam membantu inspeksi pekerjaan lapangan, dokumentasi teknis, pengisian
                             checklist mutu. Terbiasa bekerja dengan teliti, disiplin, dan mengikuti prosedur kerja,
                             serta mampu bekerja sama dalam tim maupun secara mandiri. Memiliki kemauan belajar yang
                             tinggi dan siap mengembangkan kemampuan di lingkungan kerja profesional.</p>
                         <ul class="info-list">
-                            <li><strong>Nama:</strong> Shofi Naila Azzahra</li>
-                            <li><strong>Bidang:</strong> Teknik Sipil</li>
-                            <li><strong>Spesialisasi:</strong> Perawatan Gedung</li>
-                            <li><strong>Lokasi:</strong> Indonesia</li>
+                            <li><strong data-translate="info-name">Nama:</strong> Shofi Naila Azzahra</li>
+                            <li><strong data-translate="info-field">Bidang:</strong> <span data-translate="info-field-val">Teknik Sipil</span></li>
+                            <li><strong data-translate="info-spec">Spesialisasi:</strong> <span data-translate="info-spec-val">Perawatan Gedung</span></li>
+                            <li><strong data-translate="info-loc">Lokasi:</strong> <span data-translate="info-loc-val">Indonesia</span></li>
                         </ul>
-                        <a href="public/docs/cv-shofi.pdf" download class="btn btn-primary btn-cv"><i
+                        <a href="public/docs/cv-shofi.pdf" download class="btn btn-primary btn-cv" data-translate="btn-cv"><i
                                 class="fas fa-download"></i> Unduh CV</a>
                     </div>
                     <div class="about-image-wrapper">
@@ -98,32 +106,32 @@
         <section id="keahlian" class="skills section-padding reveal">
             <div class="container">
                 <div class="section-title">
-                    <h2>Keahlian Utama</h2>
+                    <h2 data-translate="title-keahlian">Keahlian Utama</h2>
                     <div class="underline"></div>
                 </div>
                 <div class="skills-grid">
                     <div class="skill-card">
                         <i class="fas fa-building skill-icon"></i>
-                        <h3>Inspeksi Gedung</h3>
-                        <p>Melakukan evaluasi kondisi visual dan struktural pada bangunan eksisting untuk mendeteksi
+                        <h3 data-translate="skill-1-title">Inspeksi Gedung</h3>
+                        <p data-translate="skill-1-desc">Melakukan evaluasi kondisi visual dan struktural pada bangunan eksisting untuk mendeteksi
                             kerusakan secara dini.</p>
                     </div>
                     <div class="skill-card">
                         <i class="fas fa-drafting-compass skill-icon"></i>
-                        <h3>AutoCAD & Pemodelan</h3>
-                        <p>Menggambar dan merancang detail struktur serta metode perbaikan teknis menggunakan perangkat
+                        <h3 data-translate="skill-2-title">AutoCAD & Pemodelan</h3>
+                        <p data-translate="skill-2-desc">Menggambar dan merancang detail struktur serta metode perbaikan teknis menggunakan perangkat
                             lunak CAD.</p>
                     </div>
                     <div class="skill-card">
                         <i class="fas fa-tools skill-icon"></i>
-                        <h3>Manajemen Perawatan</h3>
-                        <p>Menyusun jadwal dan estimasi Rencana Anggaran Biaya (RAB) untuk pemeliharaan rutin maupun
+                        <h3 data-translate="skill-3-title">Manajemen Perawatan</h3>
+                        <p data-translate="skill-3-desc">Menyusun jadwal dan estimasi Rencana Anggaran Biaya (RAB) untuk pemeliharaan rutin maupun
                             perbaikan berat.</p>
                     </div>
                     <div class="skill-card">
                         <i class="fas fa-clipboard-check skill-icon"></i>
-                        <h3>Analisis Struktur</h3>
-                        <p>Memahami mekanika teknik dan respons material terhadap beban untuk menentukan metode
+                        <h3 data-translate="skill-4-title">Analisis Struktur</h3>
+                        <p data-translate="skill-4-desc">Memahami mekanika teknik dan respons material terhadap beban untuk menentukan metode
                             perbaikan yang paling aman.</p>
                     </div>
                 </div>
@@ -134,7 +142,7 @@
         <section id="proyek" class="projects section-padding reveal">
             <div class="container">
                 <div class="section-title">
-                    <h2>Proyek & Studi Kasus</h2>
+                    <h2 data-translate="title-proyek">Proyek & Studi Kasus</h2>
                     <div class="underline"></div>
                 </div>
                 <div class="projects-grid">
@@ -142,11 +150,14 @@
                     <div class="project-card">
                         <div class="project-img">
                             <img src="public/img/project-1.png" alt="Analisis Kerusakan Struktur Beton">
+                            <div class="project-overlay">
+                                <a href="project-1.html" class="btn btn-primary btn-sm" data-translate="proj-detail">Lihat Detail</a>
+                            </div>
                         </div>
                         <div class="project-info">
-                            <span class="project-tag">Inspeksi</span>
-                            <h3>Analisis Kerusakan Struktur Beton</h3>
-                            <p>Studi kasus identifikasi keretakan pada kolom utama gedung perkantoran dan perumusan
+                            <span class="project-tag" data-translate="proj-1-tag">Inspeksi</span>
+                            <h3 data-translate="proj-1-title">Analisis Kerusakan Struktur Beton</h3>
+                            <p data-translate="proj-1-desc">Studi kasus identifikasi keretakan pada kolom utama gedung perkantoran dan perumusan
                                 usulan metode retrofitting.</p>
                         </div>
                     </div>
@@ -154,11 +165,14 @@
                     <div class="project-card">
                         <div class="project-img">
                             <img src="public/img/project-2.png" alt="RAB Pemeliharaan Fasilitas">
+                            <div class="project-overlay">
+                                <a href="project-2.html" class="btn btn-primary btn-sm" data-translate="proj-detail">Lihat Detail</a>
+                            </div>
                         </div>
                         <div class="project-info">
-                            <span class="project-tag">Manajemen</span>
-                            <h3>RAB Pemeliharaan Fasilitas</h3>
-                            <p>Perencanaan Rencana Anggaran Biaya untuk pemeliharaan berkala atap dan fasad bangunan
+                            <span class="project-tag" data-translate="proj-2-tag">Manajemen</span>
+                            <h3 data-translate="proj-2-title">RAB Pemeliharaan Fasilitas</h3>
+                            <p data-translate="proj-2-desc">Perencanaan Rencana Anggaran Biaya untuk pemeliharaan berkala atap dan fasad bangunan
                                 publik.</p>
                         </div>
                     </div>
@@ -166,11 +180,14 @@
                     <div class="project-card">
                         <div class="project-img">
                             <img src="public/img/project-3.png" alt="Desain Perkuatan Struktur Baja">
+                            <div class="project-overlay">
+                                <a href="project-3.html" class="btn btn-primary btn-sm" data-translate="proj-detail">Lihat Detail</a>
+                            </div>
                         </div>
                         <div class="project-info">
-                            <span class="project-tag">Perancangan</span>
-                            <h3>Desain Perkuatan Struktur Baja</h3>
-                            <p>Pemodelan ulang dan perancangan detail sambungan baja pada struktur gudang yang mengalami
+                            <span class="project-tag" data-translate="proj-3-tag">Perancangan</span>
+                            <h3 data-translate="proj-3-title">Desain Perkuatan Struktur Baja</h3>
+                            <p data-translate="proj-3-desc">Pemodelan ulang dan perancangan detail sambungan baja pada struktur gudang yang mengalami
                                 penurunan kapasitas beban.</p>
                         </div>
                     </div>
@@ -182,11 +199,11 @@
         <section id="kontak" class="contact section-padding reveal">
             <div class="container">
                 <div class="section-title">
-                    <h2>Hubungi Saya</h2>
+                    <h2 data-translate="title-kontak">Hubungi Saya</h2>
                     <div class="underline"></div>
                 </div>
                 <div class="contact-content">
-                    <p class="contact-text">Tertarik untuk berdiskusi tentang teknik sipil, konsultasi perawatan gedung,
+                    <p class="contact-text" data-translate="kontak-desc">Tertarik untuk berdiskusi tentang teknik sipil, konsultasi perawatan gedung,
                         atau tawaran kolaborasi? Jangan ragu untuk menghubungi saya.</p>
                     <div class="contact-methods">
                         <a href="mailto:shofinaila78@gmail.com" class="contact-item">
@@ -220,10 +237,15 @@
     <footer>
         <div class="container">
             <div class="footer-content">
-                <p>&copy; 2026 Shofi Naila Azzahra. Hak Cipta Dilindungi.</p>
+                <p>&copy; 2026 Shofi Naila Azzahra. <span data-translate="footer-copy">Hak Cipta Dilindungi.</span></p>
             </div>
         </div>
     </footer>
+
+    <!-- Scroll to Top Button -->
+    <a href="#" class="scroll-top" id="scrollTop" aria-label="Scroll to Top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
 
     <!-- Interactivity Script -->
     <script>
@@ -323,6 +345,128 @@
             setTimeout(typeEffect, delay);
         }
         typeEffect();
+
+        // ========== Scroll to Top ==========
+        const scrollTopBtn = document.getElementById('scrollTop');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 400) {
+                scrollTopBtn.classList.add('show');
+            } else {
+                scrollTopBtn.classList.remove('show');
+            }
+        });
+
+        scrollTopBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // ========== Theme Toggle ==========
+        const themeToggleBtn = document.querySelector('.theme-toggle');
+        const themeIcon = document.getElementById('theme-icon');
+        const htmlElement = document.documentElement;
+        
+        // Cek localStorage
+        const currentTheme = localStorage.getItem('theme');
+        if (currentTheme) {
+            htmlElement.setAttribute('data-theme', currentTheme);
+            if (currentTheme === 'light') {
+                themeIcon.classList.replace('fa-sun', 'fa-moon');
+            }
+        }
+
+        themeToggleBtn.addEventListener('click', () => {
+            let theme = htmlElement.getAttribute('data-theme');
+            if (theme === 'light') {
+                htmlElement.removeAttribute('data-theme');
+                themeIcon.classList.replace('fa-moon', 'fa-sun');
+                localStorage.setItem('theme', 'dark');
+            } else {
+                htmlElement.setAttribute('data-theme', 'light');
+                themeIcon.classList.replace('fa-sun', 'fa-moon');
+                localStorage.setItem('theme', 'light');
+            }
+        });
+
+        // ========== Language Switcher ==========
+        const translations = {
+            "nav-beranda": { id: "Beranda", en: "Home" },
+            "nav-tentang": { id: "Tentang Saya", en: "About Me" },
+            "nav-keahlian": { id: "Keahlian", en: "Skills" },
+            "nav-proyek": { id: "Proyek", en: "Projects" },
+            "nav-kontak": { id: "Kontak", en: "Contact" },
+            
+            "hero-greeting": { id: "Halo, perkenalkan saya", en: "Hello, let me introduce myself" },
+            "hero-summary": { id: "Mahasiswa D4 Teknik Perawatan dan Perbaikan Gedung di Politeknik Negeri Semarang. Memiliki minat pada bidang konstruksi, Quantity Surveyor, Quality Control, K3/HSE, serta Maintenance Gedung.", en: "D4 Student of Building Maintenance and Repair Engineering at Semarang State Polytechnic. Interested in construction, Quantity Surveyor, Quality Control, HSE, and Building Maintenance." },
+            "btn-proyek": { id: "Lihat Proyek", en: "View Projects" },
+            "btn-kontak": { id: "Hubungi Saya", en: "Contact Me" },
+
+            "title-tentang": { id: "Tentang Saya", en: "About Me" },
+            "about-p1": { id: "Saya merupakan mahasiswa <strong>D4 Teknik Perawatan dan Perbaikan Gedung</strong> di <strong>Politeknik Negeri Semarang</strong> yang memiliki minat pada bidang konstruksi, <strong>Quantity Surveyor</strong>, <strong>Quality Control</strong>, keselamatan dan kesehatan kerja (<strong>K3/HSE</strong>), serta <strong>Maintenance Gedung</strong>.", en: "I am an undergraduate student in <strong>Building Maintenance and Repair Engineering</strong> at <strong>Semarang State Polytechnic</strong> with interests in construction, <strong>Quantity Surveying</strong>, <strong>Quality Control</strong>, Occupational Health and Safety (<strong>HSE</strong>), and <strong>Building Maintenance</strong>." },
+            "about-p2": { id: "Memiliki pengalaman dalam membantu inspeksi pekerjaan lapangan, dokumentasi teknis, pengisian checklist mutu. Terbiasa bekerja dengan teliti, disiplin, dan mengikuti prosedur kerja, serta mampu bekerja sama dalam tim maupun secara mandiri. Memiliki kemauan belajar yang tinggi dan siap mengembangkan kemampuan di lingkungan kerja profesional.", en: "Experienced in assisting field inspections, technical documentation, and quality checklist completion. Accustomed to working meticulously, strictly following procedures, and capable of collaborating in teams or working independently. Have a strong willingness to learn and ready to develop skills in a professional work environment." },
+            "info-name": { id: "Nama:", en: "Name:" },
+            "info-field": { id: "Bidang:", en: "Field:" },
+            "info-field-val": { id: "Teknik Sipil", en: "Civil Engineering" },
+            "info-spec": { id: "Spesialisasi:", en: "Specialization:" },
+            "info-spec-val": { id: "Perawatan Gedung", en: "Building Maintenance" },
+            "info-loc": { id: "Lokasi:", en: "Location:" },
+            "info-loc-val": { id: "Indonesia", en: "Indonesia" },
+            "btn-cv": { id: "<i class=\"fas fa-download\"></i> Unduh CV", en: "<i class=\"fas fa-download\"></i> Download CV" },
+
+            "title-keahlian": { id: "Keahlian Utama", en: "Core Skills" },
+            "skill-1-title": { id: "Inspeksi Gedung", en: "Building Inspection" },
+            "skill-1-desc": { id: "Melakukan evaluasi kondisi visual dan struktural pada bangunan eksisting untuk mendeteksi kerusakan secara dini.", en: "Evaluating visual and structural conditions of existing buildings to detect damage early." },
+            "skill-2-title": { id: "AutoCAD & Pemodelan", en: "AutoCAD & Modeling" },
+            "skill-2-desc": { id: "Menggambar dan merancang detail struktur serta metode perbaikan teknis menggunakan perangkat lunak CAD.", en: "Drawing and designing structural details and technical repair methods using CAD software." },
+            "skill-3-title": { id: "Manajemen Perawatan", en: "Maintenance Management" },
+            "skill-3-desc": { id: "Menyusun jadwal dan estimasi Rencana Anggaran Biaya (RAB) untuk pemeliharaan rutin maupun perbaikan berat.", en: "Scheduling and estimating Bill of Quantities (BoQ) for routine maintenance and heavy repairs." },
+            "skill-4-title": { id: "Analisis Struktur", en: "Structural Analysis" },
+            "skill-4-desc": { id: "Memahami mekanika teknik dan respons material terhadap beban untuk menentukan metode perbaikan yang paling aman.", en: "Understanding engineering mechanics and material responses to loads to determine the safest repair methods." },
+
+            "title-proyek": { id: "Proyek & Studi Kasus", en: "Projects & Case Studies" },
+            "proj-1-tag": { id: "Inspeksi", en: "Inspection" },
+            "proj-1-title": { id: "Analisis Kerusakan Struktur Beton", en: "Concrete Structure Damage Analysis" },
+            "proj-1-desc": { id: "Studi kasus identifikasi keretakan pada kolom utama gedung perkantoran dan perumusan usulan metode retrofitting.", en: "Case study identifying cracks in main columns of an office building and proposing retrofitting methods." },
+            "proj-2-tag": { id: "Manajemen", en: "Management" },
+            "proj-2-title": { id: "RAB Pemeliharaan Fasilitas", en: "Facility Maintenance BoQ" },
+            "proj-2-desc": { id: "Perencanaan Rencana Anggaran Biaya untuk pemeliharaan berkala atap dan fasad bangunan publik.", en: "Bill of Quantities planning for periodic maintenance of public building roofs and facades." },
+            "proj-3-tag": { id: "Perancangan", en: "Design" },
+            "proj-3-title": { id: "Desain Perkuatan Struktur Baja", en: "Steel Structure Reinforcement Design" },
+            "proj-3-desc": { id: "Pemodelan ulang dan perancangan detail sambungan baja pada struktur gudang yang mengalami penurunan kapasitas beban.", en: "Remodeling and designing steel connection details for a warehouse structure experiencing load capacity reduction." },
+            "proj-detail": { id: "Lihat Detail", en: "View Details" },
+
+            "title-kontak": { id: "Hubungi Saya", en: "Contact Me" },
+            "kontak-desc": { id: "Tertarik untuk berdiskusi tentang teknik sipil, konsultasi perawatan gedung, atau tawaran kolaborasi? Jangan ragu untuk menghubungi saya.", en: "Interested in discussing civil engineering, building maintenance consulting, or collaboration offers? Feel free to contact me." },
+            "footer-copy": { id: "Hak Cipta Dilindungi.", en: "All Rights Reserved." }
+        };
+
+        const langToggleBtn = document.querySelector('.lang-toggle');
+        const langText = document.getElementById('lang-text');
+        
+        let currentLang = localStorage.getItem('lang') || 'id';
+        
+        function updateLanguage(lang) {
+            document.documentElement.setAttribute('lang', lang);
+            langText.textContent = lang === 'id' ? 'ID' : 'EN';
+            
+            document.querySelectorAll('[data-translate]').forEach(el => {
+                const key = el.getAttribute('data-translate');
+                if (translations[key]) {
+                    el.innerHTML = translations[key][lang];
+                }
+            });
+            localStorage.setItem('lang', lang);
+        }
+
+        // Initialize language
+        if (currentLang === 'en') {
+            updateLanguage('en');
+        }
+
+        langToggleBtn.addEventListener('click', () => {
+            currentLang = currentLang === 'id' ? 'en' : 'id';
+            updateLanguage(currentLang);
+        });
     </script>
 </body>
 
